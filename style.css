@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #088;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.qa_box {
+    width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+.qa_header {
+    background-color: #0b58a7;
+    color: #fff;
+    justify-content: space-between;
+    display: flex;
+    padding: 15px 20px;
+    margin: -20px -20px 20px;
+    border-radius: 15px 15px 0 0;
+}
+.qa_body {
+    padding: 10px 0;
+}
+.qa_set {
+    margin-bottom: 20px;
+}
+.qa_set h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.qa_ans_row {
+    margin-bottom: 10px;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+.qa_ans_row:hover {
+    background-color: gray;
+}
+.qa_ans_row label {
+    padding: 5px;
+    cursor: pointer;
+}
+.qa_footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.btn1 {
+    background-color: #0b58a7;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.qa_ans_row input[value="Correct"]:checked+label  {
+    background-color: green;
+    color: white;
+}
+.qa_ans_row input[value="Incorrect"]:checked+label  {
+    background-color: red;
+    color: white;
+}
